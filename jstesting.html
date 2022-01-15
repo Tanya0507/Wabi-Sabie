@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Recents....</h2>
+    <img name="slide" width="1000" height="800" style="text-align: center;" />
+    <script>
+        var i = 0; 			// Start Point
+        var images = [];	// Images Array
+        var time = 3000;	// Time Between Switch
+	 
+// Image List
+         images[0] = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
+         images[1] = "https://thumbs.dreamstime.com/b/nature-forest-trees-growing-to-upward-to-sun-wallpaper-42907586.jpg";
+         images[2] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ImH43HlrtYrXI5tMKOILXEMBmXYyDINVCBTByCV4WZfzjNUImKQMNxDOT9-jCOPYfQk&usqp=CAU";
+         images[3] = "https://i.pinimg.com/originals/5e/42/32/5e4232f77be648141c9dc72c07b99b73.jpg";
+
+// Change Image
+        function changeImg(){
+	      document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	       if(i < images.length - 1){
+	  // Add 1 to Index
+	         i++; 
+	        }
+            else { 
+		// Reset Back To O
+		   i = 0;
+	    }
+
+	// Run function every x seconds
+	     setTimeout("changeImg()", time);
+       }
+
+// Run function when page loads
+           window.onload=changeImg;
+    </script>
+</body>
+</html>

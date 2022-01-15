@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 800px;
+  height: 500px
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">hide/display</button>
+
+<div id="myDIV">
+<h2 onclick="showCoords(event)"><img src="https://cimg2.ibsrv.net/cimg/www.davesgarden.com/700x312_100-1/18/wildflowers-415018.png" alt="nature" width="800" height="500"></h2>
+
+<p> Try to click different places in the image.</p>
+</div>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showCoords(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = "X coords: " + x + ", Y coords: " + y;
+  document.getElementById("demo").innerHTML = coords;
+}
+</script>
+
+</body>
+</html>

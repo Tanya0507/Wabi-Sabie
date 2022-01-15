@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(221, 205, 205, 0.1),rgba(240, 122, 177, 0.1)), url(https://www.wallpaperboulevard.com/Images/product/gwyneth-indigo-boho-chic-pop-floral-wal-ffaj.jpg);
+    height:90vh;
+    background-size:cover;
+    background-position: center;
+    
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right:10px;
+}
+ul li{
+    display:inline-block;
+
+}
+ul li a{
+    text-decoration: solid;
+    color:white;
+    padding: 5px 25px;
+    border: 2px solid;
+    transition: 0.6s(ease);
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+
+}
+.logo img{
+    float: left;
+    width: 170px;
+    height: auto;
+    margin-top: 20px;
+    margin-left:20px;
+}
+.title{
+    position:absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%,-45%);
+}
+.title h1{
+    color:white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+}
+.button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+    position:absolute;
+    top: 57%;
+    left: 46%;
+    transform: translate(-45%,-45%);
+
+}
+.btn{
+    border: 1px solid black;
+    padding: 10px 10px;
+    color:#000;
+    text-decoration: solid;
+
+}
+.btn:hover{
+    background-color:white;
+    color: black;
+    transition: 0.6s(ease);
+}
+.cpyright{
+    display: flex;
+    background-color: black;
+    text-align:end;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+.bttn{
+    width: 10%;
+    background: black;
+     border: 1px solid white;
+     margin: 12px 0;
+     height: 20px;
+     font-size: 15px;
+     border-radius: 20px;
+     padding: 0 20px;
+     box-sizing: border-box;
+     outline: none;
+     color:white;
+     cursor: pointer;
+    
+
+}
+#search{
+   
+        padding: 5px;
+        font-size: 17px;
+        border-radius: 10px;
+        text-align: left;
+      
+        
+
+
+      
+}
+.navbar1{
+    padding: 10px;
+   background-color: black;
+}
+.rnav{
+    text-align: left;
+    border: red;
+}
